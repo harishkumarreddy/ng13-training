@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-viewstudent',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./viewstudent.component.less']
 })
 export class ViewstudentComponent implements OnInit {
-
-  constructor() { }
+  id: number = 0;
+  constructor(
+    private router: ActivatedRoute,
+  ) { }
 
   ngOnInit(): void {
+    this.router.params.subscribe(params => {
+      this.id = parseInt(params['id']);
+    });
   }
 
 }

@@ -12,7 +12,7 @@ const routes: Routes = [
   {path: 'contact', component: ContactComponent},
 
   // Lazy loading
-  { path: 'products', pathMatch: 'full', 
+  { path: 'products', 
     loadChildren: () => import('./modules/products/products.module').then(m => m.ProductsModule) },
   { path: 'students',
     loadChildren: () => import('./modules/students/students.module').then(m => m.StudentsModule) },
