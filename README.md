@@ -269,6 +269,9 @@ EX:
 9. Http/ API intigration
     - AJAX -> Asynchronous Javascript And XML
 10. Routing
+    1. routerLink -> define in anchor tag/link tag
+    2. routerOutlet -> to load component/render targeted component
+    3. routerLinkActive -> to add active class to targeted link
 11. RXJS
 12. Testing
 13. Interfaces
@@ -277,7 +280,10 @@ EX:
     2. Intigration models -> Intigrate with Services
 
 # Advanced Angular
-1. Lazy loading** -> 
+1. Lazy loading** -> load chield modules on demand
+    ex: create chield module and add it in app-routing.module.ts
+    command: ng g m modules/students --route=students --routing=true -m=app.module.ts 
+    
 2. stores** -> Redux, NgRx 
 3. SSR -> Server Side Rendering
 4. PWA -> Progressive Web App
