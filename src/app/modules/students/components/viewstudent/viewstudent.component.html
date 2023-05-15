@@ -1,1 +1,26 @@
-<p>viewstudent works! <br> and the selectd student ID is {{id}}</p>
+<table>
+    <tr>
+        <th>Student Name</th>
+        <td>:{{student.name}}</td>
+    </tr>
+    <tr>
+        <th>Student Age</th>
+        <td>:{{student.age}}</td>
+    </tr>
+    <tr>
+        <th>Student Email</th>
+        <td>:{{student.email}}</td>
+    </tr>
+    <tr>
+        <th>Student Contact</th>
+        <td>:{{student.contact}}</td>
+    </tr>
+    <tr>
+        <th>Student Address</th>
+        <td>:{{student.address}}</td>
+    </tr>
+    <tr>
+        <th>Student Image</th>
+        <td>:<img src="{{(student.image)? student.image : 'https://rcmi.fiu.edu/wp-content/uploads/sites/30/2018/02/no_user.png'}}" alt="student image" width="100px" height="100px"></td>
+    </tr>
+</table>

@@ -283,7 +283,7 @@ EX:
 1. Lazy loading** -> load chield modules on demand
     ex: create chield module and add it in app-routing.module.ts
     command: ng g m modules/students --route=students --routing=true -m=app.module.ts 
-    
+2. Hooks
 2. stores** -> Redux, NgRx 
 3. SSR -> Server Side Rendering
 4. PWA -> Progressive Web App

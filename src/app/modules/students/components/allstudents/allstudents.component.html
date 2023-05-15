@@ -1,1 +1,33 @@
-<p>allstudents works!</p>
+<div>
+    <!-- studenta table -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Sno</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Contact</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Actins</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students; let i = index">
+                <td>{{i+1}}</td>
+                <td>
+                    <a routerLink="/students/view/{{student.id}}">{{student.name}}</a>
+                </td>
+                <td>{{student.age}}</td>
+                <td>{{student.email}}</td>
+                <td>{{student.contact}}</td>
+                <td>{{student.address}}</td>
+                <td>
+                    <!-- <button (click)="editStudent(student.id)">Edit</button>
+                    <button (click)="deleteStudent(student.id)">Delete</button> -->
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

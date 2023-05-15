@@ -5,17 +5,22 @@ import { StudentsRoutingModule } from './students-routing.module';
 import { StudentsComponent } from './students.component';
 import { AllstudentsComponent } from './components/allstudents/allstudents.component';
 import { ViewstudentComponent } from './components/viewstudent/viewstudent.component';
+import { HttpClientModule } from '@angular/common/http';
+import { StudentService } from './services/student.service';
 
 
 @NgModule({
   declarations: [
     StudentsComponent,
     AllstudentsComponent,
-    ViewstudentComponent
+    ViewstudentComponent,
   ],
   imports: [
     CommonModule,
-    StudentsRoutingModule
-  ]
+    StudentsRoutingModule,
+    HttpClientModule,
+  ],
+  providers: [
+  ],
 })
 export class StudentsModule { }
