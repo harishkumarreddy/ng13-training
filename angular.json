@@ -28,7 +28,8 @@
             "inlineStyleLanguage": "less",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/config"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
@@ -86,6 +87,14 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "dev": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
             }
           },
           "defaultConfiguration": "qa"
@@ -101,6 +110,9 @@
             },
             "qa": {
               "browserTarget": "ng13:build:qa"
+            },
+            "dev": {
+              "browserTarget": "ng13:build:dev"
             }
           },
           "defaultConfiguration": "development"
@@ -130,6 +142,24 @@
             "scripts": []
           }
         }
+      },
+      "qa": {
+        "builder": "@angular-devkit/build-angular:dev-server",
+        "configurations": {
+          "production": {
+            "browserTarget": "ng13:build:production"
+          },
+          "development": {
+            "browserTarget": "ng13:build:development"
+          },
+          "qa": {
+            "browserTarget": "ng13:build:qa"
+          },
+          "dev": {
+            "browserTarget": "ng13:build:dev"
+          }
+        },
+        "defaultConfiguration": "qa"
       }
     }
   },

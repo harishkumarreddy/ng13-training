@@ -283,12 +283,21 @@ EX:
 1. Lazy loading** -> load chield modules on demand
     ex: create chield module and add it in app-routing.module.ts
     command: ng g m modules/students --route=students --routing=true -m=app.module.ts 
-2. Hooks
-2. stores** -> Redux, NgRx 
-3. SSR -> Server Side Rendering
-4. PWA -> Progressive Web App
-5. MFE -> Micro Front End
-6. Build and Deploy
+2. Hooks -> Life cycle methods/Events/hooks
+    1. Constructor -> called when component is created
+    2. ngOnInit -> called when component is initialized
+    3. ngOnChanges -> called when component is changed
+    4. ngDoCheck -> called when component is checked
+    5. ngAfterContentInit -> called when component is content initialized
+    6. ngAfterContentChecked -> called when component is content checked
+    7. ngAfterViewInit -> called when component is view initialized
+    8. ngAfterViewChecked -> called when component is view checked
+    9. ngOnDestroy -> called when component is destroyed
+3. stores** -> Redux, NgRx 
+4. SSR -> Server Side Rendering
+5. PWA -> Progressive Web App
+6. MFE -> Micro Front End
+7. Build and Deploy
 
 
 # API Server

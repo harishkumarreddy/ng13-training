@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { StudentService } from '../../services/student.service';
 
@@ -7,7 +7,7 @@ import { StudentService } from '../../services/student.service';
   templateUrl: './viewstudent.component.html',
   styleUrls: ['./viewstudent.component.less']
 })
-export class ViewstudentComponent implements OnInit {
+export class ViewstudentComponent implements OnInit, AfterViewInit {
   id: number = 0;
   student: any = {};
 
@@ -21,6 +21,10 @@ export class ViewstudentComponent implements OnInit {
       this.id = parseInt(params['id']);
       this.getStudentById();
     });
+  }
+
+  ngAfterViewInit(): void {
+      
   }
 
   getStudentById() {
