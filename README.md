@@ -298,6 +298,7 @@ EX:
 5. PWA -> Progressive Web App
 6. MFE -> Micro Front End
 7. Build and Deploy
+8. Unit Testing
 
 
 # API Server

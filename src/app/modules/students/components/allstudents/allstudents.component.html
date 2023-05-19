@@ -14,7 +14,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let student of students; let i = index">
+            <tr *ngFor="let student of studentsState$|async; let i = index">
                 <td>{{i+1}}</td>
                 <td>
                     <a routerLink="/students/view/{{student.id}}">{{student.name}}</a>

@@ -8,6 +8,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment';
+import { AppReducer } from './store/reducers';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { ContactComponent } from './components/contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    StoreModule.forRoot({ 
+      app: AppReducer
+     }),
+    StoreDevtoolsModule.instrument({})
   ],
   providers: [
     

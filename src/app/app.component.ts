@@ -41,31 +41,31 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit, Af
   }
 
   ngOnInit(): void {
-    console.log('ngOnInit');
+    // console.log('ngOnInit');
     this.setName = 'Harish';
   }
 
   ngAfterViewInit(): void {
-    console.log('ngAfterViewInit');
-    console.log(this.getName);
+    // console.log('ngAfterViewInit');
+    // console.log(this.getName);
   }
 
   ngAfterContentInit(): void {
-    console.log('ngAfterContentInit');
+    // console.log('ngAfterContentInit');
   }
 
   ngAfterContentChecked(): void {
-    console.log('ngAfterContentChecked');
+    // console.log('ngAfterContentChecked');
   }
 
   ngAfterViewChecked(): void {
-    console.log('ngAfterViewChecked');
+    // console.log('ngAfterViewChecked');
   }
 
   ngOnDestroy(): void {
-    console.log('ngOnDestroy');
+    // console.log('ngOnDestroy');
     this.setName(null);
-    console.log(this.getName);
+    // console.log(this.getName);
   }
 
   

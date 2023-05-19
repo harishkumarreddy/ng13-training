@@ -11,6 +11,8 @@ export class ViewstudentComponent implements OnInit, AfterViewInit {
   id: number = 0;
   student: any = {};
 
+  
+
   constructor(
     private router: ActivatedRoute,
     private studentService: StudentService
