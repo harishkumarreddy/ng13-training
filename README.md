@@ -294,11 +294,38 @@ EX:
     8. ngAfterViewChecked -> called when component is view checked
     9. ngOnDestroy -> called when component is destroyed
 3. stores** -> Redux, NgRx 
+    1. Store
+    2. Actions
+    3. Reducers
+    4. Selectors
 4. SSR -> Server Side Rendering
 5. PWA -> Progressive Web App
 6. MFE -> Micro Front End
 7. Build and Deploy
 8. Unit Testing
+    A. Jasmin -> Unit testing framework
+    B. Karma -> Test runner
+
+    1. Test Sute
+    2. Test Sweet
+    3. test Bed
+    4. test Case
+
+    1. Describe -> Test Suite
+    2. It -> Test Case
+    3. Expect -> Test Sweet
+    4. BeforeEach -> Test Bed
+    5. AfterEach -> Test Bed
+    6. BeforeAll -> Test Bed
+    7. AfterAll -> Test Bed
+
+TDD -> Test Driven Development
+ 1. allways success -> green
+ 2. allways fail -> red
+ 3. +/- -> refactor -> green
+ 4. worest ever
+ 5. edge cases
+
 
 
 # API Server

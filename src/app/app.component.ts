@@ -64,8 +64,19 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit, Af
 
   ngOnDestroy(): void {
     // console.log('ngOnDestroy');
-    this.setName(null);
+    this.setName=null;
     // console.log(this.getName);
+  }
+
+  getSum(a:number, b:number) {
+    return a + b;
+  }
+
+  devide(a:number, b:number) {
+    if(b === 0) {
+      return "Infinity";
+    }
+    return a / b;
   }
 
   
