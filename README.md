@@ -298,9 +298,9 @@ EX:
     2. Actions
     3. Reducers
     4. Selectors
-4. SSR -> Server Side Rendering
-5. PWA -> Progressive Web App
-6. MFE -> Micro Front End
+4. SSR -> Server Side Rendering -> Angular Universal
+5. PWA -> Progressive Web App -> manifest.json, service-worker.js
+6. MFE -> Micro Front End -> module FederatioM
 7. Build and Deploy
 8. Unit Testing
     A. Jasmin -> Unit testing framework
